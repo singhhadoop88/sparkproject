@@ -62,7 +62,7 @@ object uber {
 
     dffinal.show(100)
     
-    dffinal.coalesce(1).write.format("csv").save("D:/Mantu's VM/Spark Stuff/project3_uberproject/uber_final.csv")
+    dffinal.coalesce(1).write.mode("Ignore").format("csv").save("D:/Mantu's VM/Spark Stuff/project3_uberproject/uber_final")
     
     println("data written")
 
